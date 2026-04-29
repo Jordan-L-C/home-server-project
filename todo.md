@@ -17,13 +17,14 @@
 - [ ] Make battery conservation mode survive reboots (startup script)
 - [x] Update gateway4 to modern Netplan syntax (when rebuilding)
 - [ ] Set up Wireguard VPN (bypasses Eir blocking GitHub permanently)
-- [ ] sudo apt upgrade -y (121 packages pending)
+- [x] sudo apt upgrade -y (121 packages pending)
 - [ ] Set up proper Docker usage
 - [ ] Write a Dockerfile
 - [ ] Use docker-compose for multi container apps
 - [ ] Configure Nginx as a reverse proxy
 - [ ] Host something real on the server
 - [ ] Set up AWS EC2 and mirror what is built locally
+- [x] Fix default gateway - was 192.168.1.1, correct is 192.168.1.254 (Eir F2000)
 
 ## Learning Goals
 - [ ] Get comfortable with Linux basics
