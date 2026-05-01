@@ -18,7 +18,7 @@
 - [ ] Document everything properly in this repo
 
 ## TODO
-- [ ] Redo new user exercise with proper SSH key setup
+- [x] Redo new user exercise with proper SSH key setup
 - [ ] Make battery conservation mode survive reboots (startup script)
 - [ ] Set up WireGuard VPN
 - [ ] Set up proper Docker usage
@@ -30,7 +30,7 @@
 - [ ] Set up port forwarding to expose server to internet
 
 ## Learning Goals
-- [ ] Get comfortable with Linux basics
+- [x] Get comfortable with Linux basics
 - [ ] Networking deep dive
 - [ ] AWS certifications / study
 - [ ] Prepare for Amazon Cloud Support Associate interview
