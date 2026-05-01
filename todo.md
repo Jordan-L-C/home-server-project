@@ -19,7 +19,7 @@
 
 ## TODO
 - [x] Redo new user exercise with proper SSH key setup
-- [ ] Make battery conservation mode survive reboots (startup script)
+- [x] Make battery conservation mode survive reboots (startup script)
 - [ ] Set up WireGuard VPN
 - [ ] Set up proper Docker usage
 - [ ] Write a Dockerfile
