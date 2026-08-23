@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    firstcompose:
+      build: .
+      ports: 
+        - "8000:80"
+
+    secondcompose:
+      build: /home/yordose/projects/docker-project/flask-app

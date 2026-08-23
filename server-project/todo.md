@@ -21,11 +21,11 @@
 - [x] Redo new user exercise with proper SSH key setup
 - [x] Make battery conservation mode survive reboots (startup script)
 - [ ] Set up WireGuard VPN
-- [ ] Set up proper Docker usage
+- [x] Set up proper Docker usage
 - [x] Write a Dockerfile
-- [ ] Use docker-compose for multi-container apps
+- [x] Use docker-compose for multi-container apps
 - [x] Configure Nginx as a reverse proxy
-- [ ] Host something real on the server
+- [x] Host something real on the server
 - [ ] Set up AWS EC2 and mirror what is built locally
 - [ ] Set up port forwarding to expose server to internet
 
@@ -33,4 +33,3 @@
 - [x] Get comfortable with Linux basics
 - [ ] Networking deep dive
 - [ ] AWS certifications / study
-- [ ] Prepare for Amazon Cloud Support Associate interview
