@@ -1,10 +1,10 @@
 Home Server Project
 
-A self-hosted infrastructure project that started on a water-damaged Lenovo laptop and now runs on AWS EC2 — built to learn real-world Linux administration, containerisation, and cloud deployment from the ground up.
+A self-hosted infrastructure project that started on a water-damaged Lenovo laptop and now runs on AWS EC2, built to learn real-world Linux administration, containerisation, and cloud deployment from the ground up.
 
 Overview
 
-This project documents the full journey of turning a spare laptop into a production-style server: hardening it, containerising a web stack with Docker, and migrating that stack to the cloud on AWS — all version-controlled and reproducible.
+This project documents the full journey of turning a spare laptop into a production-style server: hardening it, containerising a web stack with Docker, and migrating that stack to the cloud on AWS, all version-controlled and reproducible.
 
 Stack: Ubuntu Server 24.04 · Docker & Docker Compose · Nginx (reverse proxy) · Flask (API backend) · AWS EC2
 
@@ -13,7 +13,7 @@ What's been built
 Linux administration & hardening
 
 Installed and configured Ubuntu Server 24.04 headless, with static networking via Netplan
-SSH hardened to key-only authentication — password auth disabled entirely
+SSH hardened to key-only authentication, password auth disabled entirely
 New user provisioning with individual SSH key pairs
 Automated battery conservation via a custom systemd service
 
@@ -27,7 +27,7 @@ Cloud deployment (AWS EC2)
 
 Migrated the entire stack from bare-metal to an EC2 instance (Ubuntu 24.04, t3.micro, free tier)
 Configured security groups as the cloud-native equivalent of router port forwarding
-Diagnosed and fixed a hardcoded absolute path in docker-compose.yml that broke the build on migration — replaced with a relative path for true environment portability
+Diagnosed and fixed a hardcoded absolute path in docker-compose.yml that broke the build on migration, replaced with a relative path for true environment portability
 Elastic IP configured for a stable, permanent public address
 
 Version control
