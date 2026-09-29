@@ -6,7 +6,7 @@ A self-hosted infrastructure project that started on a water-damaged Lenovo lapt
 
 This project documents the full journey of turning a spare laptop into a production-style server: hardening it, containerising a web stack with Docker, and migrating that stack to the cloud on AWS, all version-controlled and reproducible.
 
-**Stack:** Ubuntu Server 24.04 · Docker & Docker Compose · Nginx (reverse proxy) · Flask (API backend) · AWS EC2
+**Stack:** Ubuntu Server 24.04 · Docker & Docker Compose · Nginx (reverse proxy) · Flask (API backend) · AWS EC2 · GitHub Actions
 
 ## What's been built
 
@@ -26,6 +26,11 @@ This project documents the full journey of turning a spare laptop into a product
 - Configured security groups as the cloud-native equivalent of router port forwarding
 - Diagnosed and fixed a hardcoded absolute path in `docker-compose.yml` that broke the build on migration, replaced with a relative path for true environment portability
 - Elastic IP configured for a stable, permanent public address
+
+**CI/CD**
+- Automated deployment pipeline using GitHub Actions, pushing to `main` triggers an SSH-based deploy to the EC2 instance
+- Credentials (host, username, private key) stored securely as GitHub Secrets, never committed to the repo
+- Pipeline runs `git pull` and rebuilds containers (`docker-compose up -d --build`) on the server automatically, removing the need for manual SSH deploys
 
 **Version control**
 - Entire project tracked in Git from day one, which is what made the EC2 migration possible with minimal changes to the codebase itself
