@@ -38,7 +38,6 @@
 - [ ] Set up an Auto Scaling Group (min/max instance limits)
 - [ ] Load-test the scaling setup
 - [ ] Learn Terraform basics — codify the EC2/security group/networking setup
-- [ ] AWS Cloud Practitioner cert (after projects)
 
 ## CI/CD
 - [x] Add GitHub Secrets for EC2 host/user/key
